@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Campaign Marketplace</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Razorpay -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<style>
+
+body{
+background:#f8fafc;
+font-family: 'Segoe UI', sans-serif;
+}
+
+.hero{
+background: linear-gradient(135deg,#6366f1,#4f46e5);
+color:white;
+padding:60px 0;
+margin-bottom:40px;
+}
+
+.hero h1{
+font-weight:700;
+}
+
+.card{
+border:none;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.06);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+.card img{
+height:200px;
+object-fit:cover;
+border-top-left-radius:12px;
+border-top-right-radius:12px;
+}
+
+.price{
+font-size:20px;
+font-weight:600;
+color:#6366f1;
+}
+
+.buy-btn{
+background:#6366f1;
+border:none;
+}
+
+.buy-btn:hover{
+background:#4f46e5;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-light bg-white shadow-sm">
+<div class="container">
+<span class="navbar-brand fw-bold text-primary">
+Campaign Marketplace
+</span>
+
+<span class="text-muted">
+Enterprise Campaign Distribution Platform
+</span>
+</div>
+</nav>
+
+
+<!-- Hero Section -->
+
+<div class="hero">
+<div class="container">
+
+<h1>Discover High-Performance Campaigns</h1>
+
+<p class="mt-3">
+Browse admin-approved marketing campaigns and purchase instantly.
+Scale your marketing with enterprise-grade automation and analytics.
+</p>
+
+</div>
+</div>
+
+
+<!-- Campaign Section -->
+
+<div class="container">
+
+<h4 class="mb-4 fw-semibold">Available Campaigns</h4>
+
+<div class="row" id="campaigns"></div>
+
+</div>
+
+
+<!-- Footer -->
+
+<div class="text-center mt-5 mb-4 text-muted">
+© 2026 Campaign Marketplace • Enterprise Platform
+</div>
+
+
+<script src="user.js"></script>
+
+</body>
+
+</html>
